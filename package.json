@@ -6,13 +6,15 @@
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/styles": "^3.0.0-alpha.8",
+    "formik": "^1.4.3",
     "nuka-carousel": "^4.4.3",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "typography": "^0.16.18"
+    "typography": "^0.16.18",
+    "yup": "^0.26.10"
   },
   "scripts": {
     "start": "react-scripts start",
