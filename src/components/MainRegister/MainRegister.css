@@ -1,0 +1,51 @@
+.text-Regsito{
+    color: #484848;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.squer_test{
+    width: 128px;
+    height: 120px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px #A7A7A7; 
+    box-shadow: 0px 2px 2px 0px #A7A7A7;
+}
+
+.squet-img{
+    margin-right: 24px;
+    float: right;
+    background-image: url("/img/registro-abogado-inactivo.svg");
+}
+.squet-img:hover{
+    background-image: url("/img/registro-abogado-activo.svg");
+}
+.squet-img_active{
+    margin-right: 24px;
+    float: right;
+    background-image: url("/img/registro-abogado-focus.svg");
+}
+.squet-img-colab{
+    margin-left: 24px;
+    float: left;
+    background-image: url("/img/registro-despacho-inactivo.svg");
+}
+.squet-img-colab:hover{
+    background-image: url("/img/registro-despacho-activo.svg");
+}
+.squet-img-colab_active{
+    margin-left: 24px;
+    float: left;
+    background-image: url("/img/registro-despacho-focus.svg");
+}
+
+.segundo-cuadro{
+    height: 50%;
+}

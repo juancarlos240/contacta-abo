@@ -1,0 +1,70 @@
+.inputCustom{
+    width: 80%;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid  #c1c1c1;
+    padding-left: 4px
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-family: 'Lato','Arial',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c1c1c1;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-family: 'Lato','Arial',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c1c1c1;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+        font-family: 'Lato','Arial',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c1c1c1;
+  }
+
+  legend {
+      border-bottom: none;
+  }
+
+  .MuiFormLabel-root-116.MuiFormLabel-focused-117 {
+        color: #484848 !important;
+  }
+.MuiInputLabel-outlined-115.MuiInputLabel-shrink-112 {
+    transform: translate(14px, -16) scale(1) !important;
+}
+
+
+.segundo-cuadro{
+    height: 50%;
+}
+
+.primer-cuadro{
+    height: 25%;
+}
+
+.tercer-cuadro{
+    height: 25%;
+}
+
+.paddingTop24{
+    padding-top: 24px
+}

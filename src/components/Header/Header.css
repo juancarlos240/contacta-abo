@@ -1,0 +1,20 @@
+.header-box{
+    display: flex;
+    background-color: #eeeeee;
+    align-items: center;
+    height: 8vh;
+}
+
+.header-box_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 64px;
+    margin-left:16px;
+}
+
+img{
+    margin-bottom: 0;
+}
+
