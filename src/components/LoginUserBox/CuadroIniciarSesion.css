@@ -1,0 +1,230 @@
+.container-box{
+    width: 29.4%;
+    height: 72.9%;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    margin-top: 64px;
+    text-align: center;
+}
+.container-image-account{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container-image-account-forget-password{
+    text-align: center;
+}
+.contenido-center-flex {
+    display: flex;
+    justify-content: center;
+}
+.container-title-login{
+    margin-bottom: 48px;
+}
+.container-img-logo{
+    border:red solid 1px;
+}
+.text-title-login{
+    width: auto;
+    height: 32;
+    margin-block-start: 16px;
+    margin-block-end: 0;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #10587f;
+}
+.container-second{
+    height: 140px;
+    width: 144px;
+    margin-top: 56px;
+}
+.container-second-forget-password{
+    width: 144px;
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+}
+.tercer-cuadro{
+    height: 25%;
+    
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.segundo-cuadro{
+    height: 50%;
+}
+.input-email{
+    margin-bottom: 40px;
+}
+.paddingTop24{
+    padding-top: 24px;
+    width: 400px;
+    padding-left: 39px;
+}
+
+.inputCustom{
+    width: 80%;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid  #c1c1c1;
+    padding-left: 4px
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #c1c1c1;
+    padding-bottom: 50px;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #c1c1c1;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+font-family: 'Lato','Arial',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c1c1c1;
+  }
+
+  legend {
+      border-bottom: none;
+  }
+
+  .MuiFormLabel-root-116.MuiFormLabel-focused-117 {
+        color: #484848 !important;
+  }
+.MuiInputLabel-outlined-115.MuiInputLabel-shrink-112 {
+    transform: translate(14px, -16) scale(1) !important;
+}
+.MuiGrid-grid-xs-12-54{
+    flex-grow: 0;
+    max-width: 51%;
+    flex-basis: 79%;
+}
+
+.horizontal-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-general {
+    width: 168px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #10587f;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    outline:none;
+    border: gray;
+}
+
+.padding-top-40{
+    padding-top: 40px;
+}
+
+.line-horizontal {
+    width: 80%;
+  height: 1px;
+  background-color: #96969696;
+
+}
+.text-gray {
+    font-family: 'Lato','Arial',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color:#969696;
+}
+.container-forget-password{
+    margin-top: 10px;
+    height: 32px;
+    cursor: pointer;
+}
+.text-forget-password{
+    width: 100%;
+    height: 32px;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    padding-right: 40px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+
+}
+
+.text-reset-password{
+    width: 324px;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #686868;
+    margin-left: 26px;
+    text-align: justify;
+}
+.container-buttons{
+    display:flex;
+    flex-direction: row;
+    
+}
+.btn-second {
+    width: 156px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #10587f;
+    outline:none;
+    border: #10587f 1px solid;
+    margin-left: 25px;
+}
