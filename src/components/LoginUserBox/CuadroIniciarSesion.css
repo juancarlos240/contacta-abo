@@ -12,7 +12,7 @@
     align-items: flex-end;
 }
 .container-image-account-forget-password{
-    text-align: center;
+    margin-left: 33%;
 }
 .contenido-center-flex {
     display: flex;
@@ -22,7 +22,7 @@
     margin-bottom: 48px;
 }
 .container-img-logo{
-    border:red solid 1px;
+
 }
 .text-title-login{
     width: auto;
@@ -133,8 +133,8 @@ font-family: 'Lato','Arial',sans-serif;
 }
 
 .btn-general {
-    width: 168px;
-    height: 40px;
+    width: 156px;
+    height: 32px;
     border-radius: 20px;
     background-color: #10587f;
     font-family: 'Lato','Arial',sans-serif;
@@ -148,6 +148,26 @@ font-family: 'Lato','Arial',sans-serif;
     color: #ffffff;
     outline:none;
     border: gray;
+    margin-left: 24px;
+}
+
+.padding-top-footer{
+    padding-top: 22px;
+}
+.text-link{
+    font-weight: bold; 
+    width: 264px;
+    height: 32px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #10587f;
+
 }
 
 .padding-top-40{

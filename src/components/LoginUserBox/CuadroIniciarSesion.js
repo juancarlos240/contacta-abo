@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import MainRegister from '../MainRegister/MainRegister'
 import { Link } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid';
@@ -10,6 +10,12 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import classNames from 'classnames';
+import {Dialog, DialogContent, DialogTitle} from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import Typography from '@material-ui/core/Typography';
+import CustomizedDialogDemo from './../ModalForgetPassword/ModalForgetPasswor';
 
 
 const styles = theme => ({
@@ -19,8 +25,6 @@ const styles = theme => ({
         notchedOutline: {
             borderRadius: 2,
         }
-
-
     },
 
     notchedOutline: {
@@ -120,15 +124,32 @@ class CuadroIniciarSesion extends Component {
     state = {
         showPassword: false,
         forgetPassword: false,
+        open: false
     }
+    
 
     handleChange = prop => event => {
         this.setState({ [prop]: event.target.value });
     };
 
+    changeState = ()=>{
+        this.setState({open : false});
+      }
+
     handleClickShowPassword = () => {
         this.setState(state => ({ showPassword: !state.showPassword }));
     };
+
+
+    handleClickOpen = () => {
+        
+        this.setState({open: true});
+      };
+    
+      handleClose = () => {
+          this.setState({ open: false });
+      };
+    
 
     renderFormResetPAssword = () => {
         const { classes } = this.props;
@@ -136,6 +157,7 @@ class CuadroIniciarSesion extends Component {
         const checkField = () => {
             errorVariable = true
         }
+       
 
         return (
             <div className='container-box'>
@@ -146,9 +168,9 @@ class CuadroIniciarSesion extends Component {
                         </div>
                     </div>
                 </div>
-                    <div className="container-title-login">
-                        <p className="text-title-login">Restablecer tu contraseña</p>
-                    </div>
+                <div className="container-title-login">
+                    <p className="text-title-login">Restablecer tu contraseña</p>
+                </div>
 
                 <div className="container-text-reset-password">
                     <p className="text-reset-password">Si has olvidado tu contraseña, podemos enviarte un correo a la dirección con la que creaste tu cuenta en Contacta-abogados y podrás restablecerla.</p>
@@ -188,12 +210,13 @@ class CuadroIniciarSesion extends Component {
                         </Grid>
                     </Grid>
                 </div>
+
                 <div className="container-buttons">
                     <div className="horizontal-layout">
                         <button onClick={() => this.setState({ forgetPassword: false })} className="btn-second">Volver</button>
                     </div>
                     <div className="horizontal-layout">
-                        <button className="btn-general">Continuar</button>
+                        <button className="btn-general" onClick={() => this.handleClickOpen()}>Continuar</button>
                     </div>
                 </div>
                 <div className="horizontal-layout padding-top-40">
@@ -202,6 +225,7 @@ class CuadroIniciarSesion extends Component {
                 <div className="horizontal-layout padding-top-40">
                     <p className="text-gray">Si tienes cualquier duda o problema escribenos a  <span className="text-link"><a> hola@cotactaabogado.com</a> </span></p>
                 </div>
+                {this.state.open === true ? <CustomizedDialogDemo changeState={this.changeState} envio={this.state.open} />: <div/>}
             </div>
         )
     }
@@ -317,7 +341,7 @@ class CuadroIniciarSesion extends Component {
                 <div className="horizontal-layout padding-top-40">
                     <div className="line-horizontal" ></div>
                 </div>
-                <div className="horizontal-layout padding-top-40">
+                <div className="horizontal-layout padding-top-footer">
                     <p className="text-gray">¿No tienes una cuenta? <span className="text-link"><a> <Link to='/RegistroAbogado'>Regístrate</Link></a> </span></p>
                 </div>
             </div>
@@ -327,13 +351,13 @@ class CuadroIniciarSesion extends Component {
     render() {
         return (
 
+                this.state.forgetPassword === false ? (
+                    this.renderForm()
 
-            this.state.forgetPassword === false ? (
-                this.renderForm()
-            ) : (
-                    this.renderFormResetPAssword()
-                )
+                ) : (
+                        this.renderFormResetPAssword()
 
+                    )
 
         )
 
