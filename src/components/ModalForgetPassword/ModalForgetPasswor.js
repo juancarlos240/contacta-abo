@@ -43,9 +43,10 @@ class CustomizedDialogDemo extends React.Component {
         >
           <DialogContent  className="conatiner-modal">
             <div className="conatiner-modal">
-                <div className="container-box-gray" />
+                <div className="container-box-gray"  >
                 <div className="container-img-position">
                 <img  width={79} height={141}  src="/img/abogado-correo.svg" />
+                </div>
                 </div>
                 <div className="container-instructions">
                     <p className="text-title-send-mail"> SE ENVIÓ UN CORREO PARA RESTABLECER TU CONTRASEÑA </p>
