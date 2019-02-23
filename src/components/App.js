@@ -13,34 +13,38 @@ import RegistroDespachoData from './RegistroDespachoData/RegistroDespachoData';
 import MiniDrawer from './MiniDrawer/MiniDrawer';
 import PageNotFound from './PageNotFound/PageNotFound';
 import './App.css';
-import { BrowserRouter , Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import RegisterSide from './RegisterSide/RegisterSide';
+import IniciarSesion from './LoginUser/IniciarSesion';
 
 
 class App extends Component {
-render() {
+  render() {
     return (
       <BrowserRouter>
-        <div>
-        <Header />
-        <Grid container >
-          <Grid className="cuadro" item xs={6}>
-            <Slider />
-          </Grid>
-          <Grid item xs={6}>
-              <Switch>
-                        <Route exact path="/" component={RegisterSide} />
-                        <Route exact path="/RegistroAbogado" component={RegistroAbogado} />
-                        <Route exact path="/RegistroAbogadoData" component={RegistroAbogadoData} />
-                        <Route exact path="/RegistroDespacho" component={RegistroDespacho} />
-                        <Route exact path="/RegistroDespachoData" component={RegistroDespachoData} />
-                        <Route component={PageNotFound} />
+        <Switch>
+          <Route exact path="/IniciarSesion" component={IniciarSesion} />
+          <div>
+            <Header />
+            <Grid container >
+              <Grid className="cuadro" item xs={6}>
+                <Slider />
+              </Grid>
+              <Grid item xs={6}>
+                <Switch>
+                  <Route exact path="/" component={RegisterSide} />
+                  <Route exact path="/RegistroAbogado" component={RegistroAbogado} />
+                  <Route exact path="/RegistroAbogadoData" component={RegistroAbogadoData} />
+                  <Route exact path="/RegistroDespacho" component={RegistroDespacho} />
+                  <Route exact path="/RegistroDespachoData" component={RegistroDespachoData} />
+                  <Route component={PageNotFound} />
                 </Switch>
-            
-          </Grid>
-        </Grid>
-        </div>
-      </BrowserRouter> 
+
+              </Grid>
+            </Grid>
+          </div>
+        </Switch>
+      </BrowserRouter>
     )
   }
 }

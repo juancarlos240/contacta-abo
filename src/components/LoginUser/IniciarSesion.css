@@ -1,0 +1,16 @@
+.container-background{
+    background-image: url("/img/fondo.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.container-general{
+    height: 103vh;
+    width: 100%;
+}
+.container-box-login{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

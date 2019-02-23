@@ -45,7 +45,7 @@ export default class extends Component {
                         <div className="line-horizontal" ></div>
                     </div> 
                     <div className="horizontal-layout padding-top-40">
-                        <p className="text-gray">¿Ya tienes una cuenta? <span className="text-link"><a> Inicia Sesión</a> </span></p>
+                        <p className="text-gray">¿Ya tienes una cuenta? <span className="text-link"><a><Link to='/IniciarSesion'> Inicia Sesión</Link></a> </span></p>
                     </div>
                 </div>
             </div>
